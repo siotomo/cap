@@ -31,7 +31,6 @@
   },
   "eslint.packageManager": "yarn",
   "[jsonc]": {
-
     "editor.quickSuggestions": {
       "strings": true
     },
@@ -57,7 +56,7 @@
   "editor.fontFamily": "RictyDiminishedForPowerline-Regular",
   "security.workspace.trust.untrustedFiles": "open",
   "markdown.preview.breaks": true,
-  "files.autoSave": "onWindowChange",
+  "files.autoSave": "afterDelay",
   "bracketPairColorizer.depreciation-notice": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "code-runner.executorMap": {
@@ -118,11 +117,16 @@
   "editor.minimap.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.activityBar.visible": false,
-  "window.zoomLevel": 1,
   "errorLens.enabledDiagnosticLevels": [
     "warning",
     "info",
     "error"
   ],
-  "errorLens.delay": 1000
+  "errorLens.delay": 20000,
+  "debug.console.acceptSuggestionOnEnter": "on",
+  "debug.console.historySuggestions": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "window.zoomLevel": 1,
+  "vsnotes.defaultNotePath": "~/Desktop/hoge",
+  "npm.keybindingsChangedWarningShown": true
 }
