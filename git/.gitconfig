@@ -11,4 +11,4 @@
 [init]
 defaultBranch = master
 [core]
-	excludesfile = /Users/shiomitomoaki/.gitignore_global
+	excludesfile = ./.gitignore_global
