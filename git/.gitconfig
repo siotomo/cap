@@ -8,5 +8,7 @@
 	required = true
 [push]
   default = current
+[init]
+defaultBranch = master
 [core]
 	excludesfile = /Users/shiomitomoaki/.gitignore_global
