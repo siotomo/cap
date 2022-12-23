@@ -8,6 +8,8 @@
 	required = true
 [push]
   default = current
+[pull]
+	ff = only
 [init]
 defaultBranch = master
 [core]
