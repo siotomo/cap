@@ -126,7 +126,7 @@
   "debug.console.acceptSuggestionOnEnter": "on",
   "debug.console.historySuggestions": true,
   "editor.acceptSuggestionOnEnter": "on",
-  "window.zoomLevel": 1,
   "vsnotes.defaultNotePath": "~/Desktop/hoge",
-  "npm.keybindingsChangedWarningShown": true
+  "npm.keybindingsChangedWarningShown": true,
+  "window.zoomLevel": 1
 }
