@@ -1,0 +1,14 @@
+[user]
+	name = shiomi
+	email = shiomi@glomouth.co.jp
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[push]
+  default = current
+[init]
+defaultBranch = master
+[core]
+	excludesfile = ./.gitignore_global
