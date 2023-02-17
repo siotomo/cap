@@ -1,132 +1,64 @@
 {
+  // workbench(vscodeのUI)
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "workbench.sideBar.location": "right",
+  "workbench.tree.indent": 20,
+  "workbench.statusBar.visible": false,
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#999",
+    "editor.lineHighlightBackground": "#151515",
+    // "editorLineNumber.foreground": "#111115"
+  },
+  // editor(コード修正関係の基本機能)
   "editor.tabSize": 2,
   "editor.wordWrap": "off",
   "editor.renderControlCharacters": false,
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "all",
-  "editor.formatOnSave": false,
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.statusBar.visible": false,
-  "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#404040"
-  },
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.includeLanguages": {
-      "erb": "html"
-  },
-  "explorer.confirmDragAndDrop": false,
-  "ruby.intellisense": "rubyLocate",
-  "git.ignoreMissingGitWarning": true,
-
-  "explorer.confirmDelete": false,
-  "workbench.startupEditor": "newUntitledFile",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "C_Cpp.updateChannel": "Insiders",
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "code-runner.runInTerminal": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.fontFamily": "RictyDiminishedForPowerline-Regular",
+  "editor.tokenColorCustomizations": {
+    "comments": "#999",
   },
+  "editor.cursorWidth": 3,
+  "editor.cursorBlinking": "phase",
+
+  // files
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+
+  // explore
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // frontend(js/ts)
   "eslint.packageManager": "yarn",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // jsonコメント
   "[jsonc]": {
     "editor.quickSuggestions": {
       "strings": true
     },
-    "editor.suggest.insertMode": "replace",
-    "gitlens.codeLens.scopes": [
-      "document"
-    ]
+    "editor.suggest.insertMode": "replace"
   },
-  "files.exclude": {
-    "/.git": true,
-    "/.DS_Store": true,
-    "/node_modules": true,
-    "/node_modules/": true
-  },
-  "search.exclude": {
-    "/node_modules": true
-  },
-  "files.watcherExclude": {
-    "**/node_modules/**": true,
-    "**/node_modules/*/**": false
-  },
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "editor.fontFamily": "RictyDiminishedForPowerline-Regular",
-  "security.workspace.trust.untrustedFiles": "open",
-  "markdown.preview.breaks": true,
-  "files.autoSave": "afterDelay",
-  "bracketPairColorizer.depreciation-notice": false,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "code-runner.executorMap": {
-    "javascript": "node",
-    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "php": "php",
-    "python": "python -u",
-    "perl": "perl",
-    "perl6": "perl6",
-    "ruby": "bundle exec ruby",
-    "go": "go run",
-    "lua": "lua",
-    "groovy": "groovy",
-    "powershell": "powershell -ExecutionPolicy ByPass -File",
-    "bat": "cmd /c",
-    "shellscript": "bash",
-    "fsharp": "fsi",
-    "csharp": "scriptcs",
-    "vbscript": "cscript //Nologo",
-    "typescript": "ts-node",
-    "coffeescript": "coffee",
-    "scala": "scala",
-    "swift": "swift",
-    "julia": "julia",
-    "crystal": "crystal",
-    "ocaml": "ocaml",
-    "r": "Rscript",
-    "applescript": "osascript",
-    "clojure": "lein exec",
-    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
-    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
-    "racket": "racket",
-    "scheme": "csi -script",
-    "ahk": "autohotkey",
-    "autoit": "autoit3",
-    "dart": "dart",
-    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
-    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
-    "haskell": "runhaskell",
-    "nim": "nim compile --verbosity:0 --hints:off --run",
-    "lisp": "sbcl --script",
-    "kit": "kitc --run",
-    "v": "v run",
-    "sass": "sass --style expanded",
-    "scss": "scss --style expanded",
-    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
-    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-  },
-  "workbench.editor.enablePreviewFromQuickOpen": true,
-  "workbench.editor.pinnedTabSizing": "compact",
-  "tabnine.experimentalAutoImports": true,
-  "editor.minimap.enabled": false,
-  "workbench.sideBar.location": "right",
-  "workbench.activityBar.visible": false,
+
+  // errorLens
   "errorLens.enabledDiagnosticLevels": [
     "warning",
     "info",
     "error"
   ],
   "errorLens.delay": 20000,
-  "debug.console.acceptSuggestionOnEnter": "on",
-  "debug.console.historySuggestions": true,
-  "editor.acceptSuggestionOnEnter": "on",
-  "vsnotes.defaultNotePath": "~/Desktop/hoge",
-  "npm.keybindingsChangedWarningShown": true,
-  "window.zoomLevel": 1
+
+  // その他
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
